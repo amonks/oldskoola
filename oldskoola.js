@@ -98,9 +98,10 @@ function oldskoolaImages() {
 	while(images.length > 0){
 		if ( images[0] ) {
 			Pixastic.process(images[0], 'sepia');
+			console.log(i);
 		}
 	}
-	
+
 }
 
 
