@@ -6,6 +6,8 @@ oldskoola can change the page background to an old paper texture, change fonts t
 
 ## Use it as a bookmarklet!
 
+this only works in safari cuz chrome won't load javascript directly from github (which uses a text mime type)
+
 <a href='javascript:var a=document.createElement("script");a.setAttribute("src","https://raw2.github.com/amonks/oldskoola/master/oldskoola.js");document.body.appendChild(a);'>Oldskoola Bookmarklet</a>
 
 ## Use it in your own sites!
