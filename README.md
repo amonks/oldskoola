@@ -2,11 +2,12 @@
 
 ## js library + bookmarklet for making websites look like old documents
 
-andrew monks 2014
+oldskoola can change the page background to an old paper texture, change fonts to oldish looking google fonts, convert all the images on a page to sepia, or do all of the above.
+
 
 ## Use it in your own sites!
 
-you need to include [oldskoola.js](https://raw2.github.com/amonks/algorithms-ai/master/oldskoola/oldskoola.js), wait until `pixastic` loads, and then run `oldskoola();`
+you need to include [oldskoola.js](https://raw2.github.com/amonks/oldskoola/master/oldskoola.js), wait until `pixastic` loads, and then run `oldskoola();`
 
 ### include it
 
