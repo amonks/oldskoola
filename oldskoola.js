@@ -10,7 +10,7 @@
 
 // include pixastic library
 var pixasticJSCode = document.createElement('script');
-pixasticJSCode.setAttribute('src', 'https://raw2.github.com/amonks/algorithms-ai/master/oldskoola/pixastic.sepia.js');
+pixasticJSCode.setAttribute('src', 'https://raw2.github.com/amonks/oldskoola/master/pixastic.sepia.js');
 document.body.appendChild(pixasticJSCode);
 
 
@@ -49,7 +49,7 @@ function oldskoola() {
 
 // function to change background to old paper texture
 function oldskoolaBackground() {
-	document.body.style.backgroundImage="url('https://raw2.github.com/amonks/algorithms-ai/master/oldskoola/paper.jpg')";
+	document.body.style.backgroundImage="url('https://raw2.github.com/amonks/oldskoola/master/paper.jpg')";
 }
 
 // function to change fonts to oldish looking google fonts
