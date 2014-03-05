@@ -68,19 +68,19 @@ function oldskoolaFonts() {
 // function to convert images to sepia
 function oldskoolaImages() {
 
-	// // iterate through images
-	// // var images = document.getElementsByTagName('img')
-	// var images = Array.prototype.slice.call(document.querySelectorAll('img'));
-	// while(images.length > 0){
-	// 	if ( images[0] ) {
-	// 		if ( baseUrl( images[0].src ) == baseUrl(window.location.href) ) {
-	// 			Pixastic.process(images[0], 'sepia');
-	// 		} else {
-	// 			console.log("Skip " + baseUrl( images[0].src ));
-	// 			images.splice(0, 1);
-	// 		};
-	// 	};
-	// };
+	// iterate through images
+	// var images = document.getElementsByTagName('img')
+	var images = Array.prototype.slice.call(document.querySelectorAll('img'));
+	while(images.length > 0){
+		if ( images[0] ) {
+			if ( baseUrl( images[0].src ) == baseUrl(window.location.href) ) {
+				Pixastic.process(images[0], 'sepia');
+			} else {
+				console.log("Skip " + baseUrl( images[0].src ));
+				images.splice(0, 1);
+			};
+		};
+	};
 };
 
 function baseUrl(url) {
