@@ -36,7 +36,7 @@ function oldskoolaFonts() {
 		WebFontConfig = {
 			google: {
 				families: ['IM+Fell+DW+Pica:400,400italic:latin', 'Pinyon+Script::latin', 'Germania+One::latin', 'Miltonian::latin', 'Fruktur::latin']
-			};
+			}
 		};
 		(function () {
 			var wf = document.createElement('script');
