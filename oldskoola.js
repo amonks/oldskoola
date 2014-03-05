@@ -79,7 +79,7 @@ function oldskoolaFonts() {
 function oldskoolaImages() {
 
 	// iterate through images
-	var images = document.getElementsByTagName("img");
+	var images = $('img')
 	while(images.length > 0){
 		console.log(images.length)
 		if ( images[0] ) {
