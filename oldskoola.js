@@ -29,7 +29,7 @@ function oldskoola() {
 // loadScript("", myPrettyCode );
 var bodyTag = document.getElementsByTagName("body")[0];
 var script = document.createElement("script");
-script.src = "//raw2.github.com/amonks/algorithms-ai/master/oldskoola/pixastic.sepia.js";
+script.src = "//raw2.github.com/amonks/oldskoola/master/pixastic.sepia.js";
 bodyTag.appendChild(script);
 script.onload = script.onreadystatechange = function() {
 	oldskoolaImages();
