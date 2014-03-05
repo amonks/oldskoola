@@ -35,7 +35,7 @@ function oldskoolaFonts() {
 	// js pasted from google fonts:
 		WebFontConfig = {
 			google: {
-				families: ['IM+Fell+DW+Pica:400,400italic:latin', 'Pinyon+Script::latin', 'Germania+One::latin', 'Miltonian::latin', 'Fruktur::latin']
+				families: ['IM+Fell+DW+Pica:400,400italic:latin', 'Niconne::latin', 'Germania+One::latin', 'Miltonian::latin', 'Fruktur::latin']
 			}
 		};
 		(function () {
@@ -50,8 +50,8 @@ function oldskoolaFonts() {
 
 	// change fonts for elements
 	changeFontsTo("h1", "'Fruktur', serif")
-	changeFontsTo("body", "'Pinyon Script', cursive")
-	changeFontsTo("p",  "2em 'Pinyon Script', cursive")
+	changeFontsTo("body", "'Niconne', cursive")
+	changeFontsTo("p",  "Niconne', cursive")
 	changeFontsTo("h2", "'IM Fell DW Pica', serif")
 	changeFontsTo("h3", "'IM Fell DW Pica', serif")
 	changeFontsTo("h4", "'IM Fell DW Pica', serif")
