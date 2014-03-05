@@ -11,7 +11,7 @@
 
 // // include pixastic library
 // var pixasticJSCode = document.createElement('script');
-// pixasticJSCode.setAttribute('src', 'https://raw2.github.com/amonks/oldskoola/master/pixastic.sepia.js');
+// pixasticJSCode.setAttribute('src', 'https://raw2.github.com/amonks/oldskoola.js/master/pixastic.sepia.js');
 // document.body.appendChild(pixasticJSCode);
 
 
@@ -29,7 +29,7 @@ function oldskoola() {
 // loadScript("", myPrettyCode );
 var bodyTag = document.getElementsByTagName("body")[0];
 var script = document.createElement("script");
-script.src = "//raw2.github.com/amonks/oldskoola/master/pixastic.sepia.js";
+script.src = "//raw2.github.com/amonks/oldskoola.js/master/pixastic.sepia.js";
 bodyTag.appendChild(script);
 script.onload = script.onreadystatechange = function() {
 	oldskoolaImages();
@@ -37,7 +37,7 @@ script.onload = script.onreadystatechange = function() {
 
 // function to change background to old paper texture
 function oldskoolaBackground() {
-	document.body.style.backgroundImage="url('https://raw2.github.com/amonks/oldskoola/master/paper.jpg')";
+	document.body.style.backgroundImage="url('https://raw2.github.com/amonks/oldskoola.js/master/paper.jpg')";
 };
 
 // function to change fonts to oldish looking google fonts
