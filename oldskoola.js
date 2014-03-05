@@ -83,8 +83,16 @@ function oldskoolaImages() {
 	while(images.length > 0){
 		console.log(images.length)
 		if ( images[0] ) {
-			Pixastic.process(images[0], 'sepia');
+			if images[0].attr('src').baseUrl == window.location.baseUrl {
+				Pixastic.process(images[0], 'sepia');
+			}
 		}
 	}
+}
 
+function baseUrl(url) {
+	pathArray = url.split( '/' );
+	protocol = pathArray[0];
+	host = pathArray[2];
+	url = protocol + '://' + host;
 }
