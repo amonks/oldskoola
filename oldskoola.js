@@ -73,6 +73,7 @@ function oldskoolaImages() {
 	var images = Array.prototype.slice.call(document.querySelectorAll('img'));
 	while(images.length > 0){
 		if ( images[0] ) {
+			console.log(images[0].src);
 			if ( baseUrl( images[0].src ) == baseUrl(window.location.href) ) {
 				Pixastic.process(images[0], 'sepia');
 			} else {
