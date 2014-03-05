@@ -81,11 +81,11 @@ function oldskoolaImages() {
 	// iterate through images
 	var images = $('img')
 	console.log(window.location.baseUrl());
-	while(images.length > 0){
+	// while(images.length > 0){
 		if ( images[0] ) {
 			console.log($(images[0]).attr('src').baseUrl);
 			// if ($(images[0]).attr('src').baseUrl == window.location.baseUrl) {
-				Pixastic.process(images[0], 'sepia');
+			// 	Pixastic.process(images[0], 'sepia');
 			// } else {
 			// 	console.log("Skip!");
 			// }
