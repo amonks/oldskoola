@@ -51,6 +51,7 @@ function oldskoolaFonts() {
 	// change fonts for elements
 	changeFontsTo("h1", "'Fruktur', serif")
 	changeFontsTo("body", "'Niconne', cursive")
+	changeFontsTo("div", "'Germania One', serif")
 	changeFontsTo("p",  "Niconne', cursive")
 	changeFontsTo("a",  "Germania One', serif")
 	changeFontsTo("h2", "'IM Fell DW Pica', serif")
