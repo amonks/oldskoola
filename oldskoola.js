@@ -98,4 +98,5 @@ function baseUrl(url) {
 	protocol = pathArray[0];
 	host = pathArray[2];
 	url = protocol + '://' + host;
+	return url
 }
