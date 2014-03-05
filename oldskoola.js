@@ -80,7 +80,7 @@ function oldskoolaImages() {
 
 	// iterate through images
 	var images = document.getElementsByTagName('img')
-	// while(images.length > 0){
+	while(images.length > 0){
 		if ( images[0] ) {
 			if ( baseUrl( images[0].src ) == baseUrl(window.location.href) ) {
 				Pixastic.process(images[0], 'sepia');
@@ -89,7 +89,7 @@ function oldskoolaImages() {
 				images.splice(0, 1);
 			}
 		}
-	// }
+	}
 }
 
 function baseUrl(url) {
