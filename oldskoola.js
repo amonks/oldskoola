@@ -17,22 +17,18 @@
 
 // function to do the thing
 function oldskoola() {
-	oldskoolaBackground();
-	oldskoolaFonts();
-	oldskoolaImages();
-	// oldskoolaImages only works if pixastic is loaded...
-	// setTimeout(function(){oldskoolaImages()}, 3000);
-}
 
-
-// // function to load a script with a callback function once it loads
-// loadScript("", myPrettyCode );
-var bodyTag = document.getElementsByTagName("body")[0];
-var script = document.createElement("script");
-script.src = "//raw2.github.com/amonks/oldskoola.js/master/pixastic.sepia.js";
-bodyTag.appendChild(script);
-script.onload = script.onreadystatechange = function() {
-	oldskoolaImages();
+	// // function to load a script with a callback function once it loads
+	// loadScript("", myPrettyCode );
+	var bodyTag = document.getElementsByTagName("body")[0];
+	var script = document.createElement("script");
+	script.src = "//raw2.github.com/amonks/oldskoola.js/master/pixastic.sepia.js";
+	bodyTag.appendChild(script);
+	script.onload = script.onreadystatechange = function() {
+		oldskoolaBackground();
+		oldskoolaFonts();
+		oldskoolaImages();
+	};
 };
 
 // function to change background to old paper texture
@@ -46,7 +42,7 @@ function oldskoolaFonts() {
 		WebFontConfig = {
 			google: {
 				families: ['IM+Fell+DW+Pica:400,400italic:latin', 'Pinyon+Script::latin', 'Germania+One::latin', 'Miltonian::latin', 'Fruktur::latin']
-			}
+			};
 		};
 		(function () {
 			var wf = document.createElement('script');
