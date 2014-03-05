@@ -18,7 +18,7 @@ function oldskoola() {
 	var pixasticScript = document.createElement("script");
 	pixasticScript.src = "//raw2.github.com/amonks/oldskoola.js/master/pixastic.sepia.js";
 	bodyTag.appendChild(pixasticScript);
-	pixasticScript.onload = script.onreadystatechange = function() {
+	pixasticScript.onload = pixasticScript.onreadystatechange = function() {
 		oldskoolaBackground();
 		oldskoolaFonts();
 		oldskoolaImages();
