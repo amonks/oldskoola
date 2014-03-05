@@ -79,7 +79,7 @@ function oldskoolaImages() {
 				Pixastic.process(images[0], 'sepia');
 			} else {
 				console.log("Skip " + baseUrl( images[0].src ));
-				images.splice(0, 1);
+				// images.splice(0, 1);
 				i++;
 			};
 		};
