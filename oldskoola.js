@@ -51,7 +51,7 @@ function oldskoolaFonts() {
 	// change fonts for elements
 	changeFontsTo("h1", "'Fruktur', serif")
 	changeFontsTo("body", "'Pinyon Script', cursive")
-	changeFontsTo("p", "'Pinyon Script', cursive, 2em")
+	changeFontsTo("p",  "2em 'Pinyon Script', cursive")
 	changeFontsTo("h2", "'IM Fell DW Pica', serif")
 	changeFontsTo("h3", "'IM Fell DW Pica', serif")
 	changeFontsTo("h4", "'IM Fell DW Pica', serif")
@@ -60,7 +60,7 @@ function oldskoolaFonts() {
 	function changeFontsTo(element, font){
 		var h1Elements = document.getElementsByTagName(element);
 		for(var i = 0; i < h1Elements.length; i++) {
-			h1Elements[i].style.fontFamily = font;
+			h1Elements[i].style.font = font;
 		};
 	};
 };
