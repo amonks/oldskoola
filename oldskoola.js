@@ -69,16 +69,17 @@ function oldskoolaFonts() {
 function oldskoolaImages() {
 
 	// iterate through images
-	// var images = document.getElementsByTagName('img')
-	var images = Array.prototype.slice.call(document.querySelectorAll('img'));
-	while(images.length > 0){
-		if ( images[0] ) {
+	var images = document.getElementsByTagName('img');
+	// var images = Array.prototype.slice.call(document.querySelectorAll('img'));
+	while(images.length > var i = 0){
+		if ( images[i] ) {
 			console.log(images[0].src);
 			if ( baseUrl( images[0].src ) == baseUrl(window.location.href) ) {
 				Pixastic.process(images[0], 'sepia');
 			} else {
 				console.log("Skip " + baseUrl( images[0].src ));
 				images.splice(0, 1);
+				i++;
 			};
 		};
 	};
