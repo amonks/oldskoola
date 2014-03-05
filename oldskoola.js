@@ -9,22 +9,16 @@
 
 // oldskoola();
 
-// // include pixastic library
-// var pixasticJSCode = document.createElement('script');
-// pixasticJSCode.setAttribute('src', 'https://raw2.github.com/amonks/oldskoola.js/master/pixastic.sepia.js');
-// document.body.appendChild(pixasticJSCode);
-
-
 // function to do the thing
 function oldskoola() {
 
 	// // function to load a script with a callback function once it loads
 	// loadScript("", myPrettyCode );
 	var bodyTag = document.getElementsByTagName("body")[0];
-	var script = document.createElement("script");
-	script.src = "//raw2.github.com/amonks/oldskoola.js/master/pixastic.sepia.js";
-	bodyTag.appendChild(script);
-	script.onload = script.onreadystatechange = function() {
+	var pixasticScript = document.createElement("script");
+	pixasticScript.src = "//raw2.github.com/amonks/oldskoola.js/master/pixastic.sepia.js";
+	bodyTag.appendChild(pixasticScript);
+	pixasticScript.onload = script.onreadystatechange = function() {
 		oldskoolaBackground();
 		oldskoolaFonts();
 		oldskoolaImages();
@@ -67,9 +61,9 @@ function oldskoolaFonts() {
 		var h1Elements = document.getElementsByTagName(element);
 		for(var i = 0; i < h1Elements.length; i++) {
 			h1Elements[i].style.fontFamily = font;
-		}
-	}
-}
+		};
+	};
+};
 
 // function to convert images to sepia
 function oldskoolaImages() {
@@ -84,10 +78,10 @@ function oldskoolaImages() {
 			} else {
 				console.log("Skip " + baseUrl( images[0].src ));
 				images.splice(0, 1);
-			}
-		}
-	}
-}
+			};
+		};
+	};
+};
 
 function baseUrl(url) {
 	pathArray = url.split( '/' );
@@ -95,4 +89,4 @@ function baseUrl(url) {
 	host = pathArray[2];
 	url = protocol + '://' + host;
 	return url
-}
+};
