@@ -79,11 +79,11 @@ function oldskoolaFonts() {
 function oldskoolaImages() {
 
 	// iterate through images
-	var images = $('img')
+	var images = document.getElementsByTagName('img')
 	console.log(baseUrl(window.location.href));
 	// while(images.length > 0){
 		if ( images[0] ) {
-			console.log( baseUrl($(images[0]).attr('src')) );
+			console.log( baseUrl( images[0].src ) );
 			// if ($(images[0]).attr('src').baseUrl == window.location.baseUrl) {
 			// 	Pixastic.process(images[0], 'sepia');
 			// } else {
