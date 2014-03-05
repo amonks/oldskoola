@@ -80,7 +80,7 @@ function oldskoolaImages() {
 
 	// iterate through images
 	var images = $('img')
-	console.log(baseUrl(window.location));
+	console.log(baseUrl(window.location.href));
 	// while(images.length > 0){
 		if ( images[0] ) {
 			console.log( baseUrl($(images[0]).attr('src')) );
