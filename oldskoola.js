@@ -60,7 +60,7 @@ function oldskoolaFonts() {
 	function changeFontsTo(element, font){
 		var h1Elements = document.getElementsByTagName(element);
 		for(var i = 0; i < h1Elements.length; i++) {
-			h1Elements[i].style.font = font;
+			h1Elements[i].style.fontFamily = font;
 		};
 	};
 };
