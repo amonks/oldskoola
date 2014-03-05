@@ -71,7 +71,8 @@ function oldskoolaImages() {
 	// iterate through images
 	var images = document.getElementsByTagName('img');
 	// var images = Array.prototype.slice.call(document.querySelectorAll('img'));
-	while(images.length > var i = 0){
+	var i = 0;
+	while(images.length > i){
 		if ( images[i] ) {
 			console.log(images[0].src);
 			if ( baseUrl( images[0].src ) == baseUrl(window.location.href) ) {
