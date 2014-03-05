@@ -68,9 +68,11 @@ function oldskoolaFonts() {
 // function to convert images to sepia
 function oldskoolaImages() {
 
-	// iterate through images
+	// iterate through images.
+	// When Pixastic processes images[i], it's removed from the nodelist, and images[i+1] becomes images[i], etc.
+	// This means I could loop through images[0], except that if Pixastic is called on a cross-domain image, it doesn't work, and images[0] doesn't change. The loop loops infinitely.
+	// By keeping track of Pixastic's failures in `i`, I can call Pixastic only on same-domain images.
 	var images = document.getElementsByTagName('img');
-	// var images = Array.prototype.slice.call(document.querySelectorAll('img'));
 	var i = 0;
 	while(images.length > i){
 		if ( images[i] ) {
@@ -79,7 +81,6 @@ function oldskoolaImages() {
 				Pixastic.process(images[i], 'sepia');
 			} else {
 				console.log("Skip " + baseUrl( images[i].src ));
-				// images.splice(0, 1);
 				i++;
 			};
 		};
