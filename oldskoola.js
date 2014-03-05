@@ -82,7 +82,7 @@ function oldskoolaImages() {
 	var images = $('img')
 	while(images.length > 0){
 		if ( images[0] ) {
-			if (images[0].attr('src').baseUrl == window.location.baseUrl) {
+			if ($(images[0]).attr('src').baseUrl == window.location.baseUrl) {
 				Pixastic.process(images[0], 'sepia');
 			} else {
 				console.log("Skip!");
