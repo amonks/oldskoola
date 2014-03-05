@@ -74,11 +74,11 @@ function oldskoolaImages() {
 	var i = 0;
 	while(images.length > i){
 		if ( images[i] ) {
-			console.log(images[0].src);
-			if ( baseUrl( images[0].src ) == baseUrl(window.location.href) ) {
-				Pixastic.process(images[0], 'sepia');
+			console.log(images[i].src);
+			if ( baseUrl( images[i].src ) == baseUrl(window.location.href) ) {
+				Pixastic.process(images[i], 'sepia');
 			} else {
-				console.log("Skip " + baseUrl( images[0].src ));
+				console.log("Skip " + baseUrl( images[i].src ));
 				// images.splice(0, 1);
 				i++;
 			};
