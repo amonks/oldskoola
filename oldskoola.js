@@ -79,7 +79,8 @@ function oldskoolaFonts() {
 function oldskoolaImages() {
 
 	// iterate through images
-	var images = document.getElementsByTagName('img')
+	// var images = document.getElementsByTagName('img')
+	var images = Array.prototype.slice.call(document.querySelectorAll('img'));
 	while(images.length > 0){
 		if ( images[0] ) {
 			if ( baseUrl( images[0].src ) == baseUrl(window.location.href) ) {
