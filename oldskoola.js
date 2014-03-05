@@ -80,15 +80,14 @@ function oldskoolaImages() {
 
 	// iterate through images
 	var images = document.getElementsByTagName('img')
-	console.log(baseUrl(window.location.href));
 	// while(images.length > 0){
 		if ( images[0] ) {
-			console.log( baseUrl( images[0].src ) );
-			// if ($(images[0]).attr('src').baseUrl == window.location.baseUrl) {
-			// 	Pixastic.process(images[0], 'sepia');
-			// } else {
-			// 	console.log("Skip!");
-			// }
+			if ( baseUrl( images[0].src ) == baseUrl(window.location.href) ) {
+				Pixastic.process(images[0], 'sepia');
+			} else {
+				console.log("Skip " + baseUrl( images[0].src ));
+				images.splice(0, 1);
+			}
 		}
 	// }
 }
